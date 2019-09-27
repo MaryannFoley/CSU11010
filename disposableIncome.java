@@ -42,7 +42,7 @@ class disposableIncome {
 		final double FRACTION_ABOVE_AVERAGE = 1.5;
 		final double FRACTION_AVERAGE = 1;
 		final double FRACTION_UNDER_AVERAGE = .5;
-		final double NO_DISPOSABLE_INCOME = 0;
+		final double FRACTION_NO_DISPOSABLE_INCOME = 0;
 		
 		Scanner input = new Scanner(System.in);
 		System.out.print("How much are you paid a month before tax? ");
@@ -69,10 +69,12 @@ class disposableIncome {
 			averageStatus = (calculatedAverageComparison > FRACTION_ABOVE_AVERAGE)?"much more than the average":"more than the average";
 		}
 		else if (calculatedAverageComparison < FRACTION_AVERAGE) {
-			if (calculatedAverageComparison <= NO_DISPOSABLE_INCOME)
+			if (calculatedAverageComparison <= FRACTION_NO_DISPOSABLE_INCOME) {
 				averageStatus = "no";
-			else
+			}
+			else {
 				averageStatus = (calculatedAverageComparison < FRACTION_UNDER_AVERAGE)?"much less than the average":"less than the average";
+			}
 		}
 		
 		System.out.println(
