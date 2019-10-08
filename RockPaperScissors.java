@@ -37,7 +37,6 @@ import java.util.Random;
 public class RockPaperScissors {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		final int ROCK_VALUE = 1;
 		final int PAPER_VALUE = 2;
 		final int SCISSORS_VALUE = 3;
