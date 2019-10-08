@@ -108,15 +108,15 @@ public class RockPaperScissors {
 			
 			if (roundWinner == COMPUTER) {
 				computerWins++;
-				System.out.println("I won this round because I chose "+computerMoveString);
+				System.out.println("I won this round because I chose "+computerMoveString+".");
 			}
 			else if (roundWinner == PLAYER) {
 				playerWins++;
-				System.out.println("You won this round because I chose "+computerMoveString);
+				System.out.println("You won this round because I chose "+computerMoveString+".");
 			}
 			else {
 				ties++;
-				System.out.println("This round was a draw because I chose "+computerMoveString);
+				System.out.println("This round was a draw because I chose "+computerMoveString+".");
 			}
 		}
 		
