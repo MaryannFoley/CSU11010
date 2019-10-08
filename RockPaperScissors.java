@@ -9,6 +9,7 @@ public class RockPaperScissors {
 		final int PAPER_VALUE = 2;
 		final int SCISSORS_VALUE = 3;
 		final int MAX_VALUE = 3;
+		final int MIN_VALUE = 1;
 		final int NUMBER_GAMES = 5;
 		final int COMPUTER = 1;
 		final int PLAYER = 2;
@@ -26,9 +27,13 @@ public class RockPaperScissors {
 		Random generator = new Random();
 		
 		for (int gameNumber = 1; gameNumber <= NUMBER_GAMES; gameNumber++) {
-			System.out.print("Enter 1 (for Rock) or 2 (for Paper) or 3 (for Scissors): ");
-			playerMove = 0;
-			playerMove = input.nextInt();
+			playerMove = -1;
+
+			while (playerMove > MAX_VALUE || playerMove < MIN_VALUE){
+				System.out.print("Enter 1 (for Rock) or 2 (for Paper) or 3 (for Scissors): ");
+				playerMove = input.nextInt();
+			}
+
 			computerMove = generator.nextInt(MAX_VALUE)+1;
 			
 			if (computerMove > playerMove) 
@@ -88,7 +93,7 @@ public class RockPaperScissors {
 		
 		
 		input.close();
-		System.out.print("The final score was computer: "+computerWins+" player: "+playerWins);
+		System.out.println("The final score was computer: "+computerWins+" player: "+playerWins);
 	}
 
 }
