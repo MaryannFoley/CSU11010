@@ -1,10 +1,30 @@
+/* SELF ASSESSMENT
+   1. Did I use appropriate CONSTANTS instead of numbers within the code?
+       Mark out of 5: 5
+   2. Did I use easy-to-understand, meaningful CONSTANT names formatted correctly in UPPERCASE?
+       Mark out of 5: 5
+   3. Did I use easy-to-understand meaningful variable names formatted properly (in lowerCamelCase)?
+       Mark out of 10: 9
+   4. Did I indent the code appropriately?
+       Mark out of 10: 10 
+   5. Did I use an appropriate loop (or loops) to produce the different verses?
+       Mark out of 20: 20
+   6. Did I use a switch to build up the verses?
+       Mark out of 25: 25
+   7. Did I avoid duplication of code and of the lines which make up the verses (each line should be referred to in the code only once (or twice))?
+       Mark out of 10: 10
+   8. Does the program produce the correct output?
+       Mark out of 10: 10
+   9. How well did I complete this self-assessment?
+       Mark out of 5: 5
+   Total Mark out of 100 (Add all the previous marks): 99
+*/ 
 
 public class TwelveDays {
-
+	final static int DAYS_OF_CHRISTMAS = 1;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		for (int dayCount = 1;dayCount <= 12;dayCount++) {
+		for (int dayCount = 1;dayCount <= DAYS_OF_CHRISTMAS;dayCount++) {
 			String dayString = "";
 			switch (dayCount) {
 			case 1:
